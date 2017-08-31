@@ -1,0 +1,415 @@
+{
+  "variables": [],
+  "info": {
+    "name": "Nutrition Mock",
+    "_postman_id": "0167711e-0044-7f76-08fc-4d2ca949bafd",
+    "description": "",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "_postman_id": "eeb69862-7fcf-4da8-8ae0-a8d63d10e1b4",
+      "name": "Post Mock Single",
+      "request": {
+        "url": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ/brandCode/21D",
+        "method": "POST",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "1761f7ff-9940-de87-19f7-c8d51d70f3e0",
+          "name": "Post Mock Single",
+          "originalRequest": {
+            "url": "https://bdc79873-00aa-47bd-bdd9-14804e961698.mock.pstmn.io/enroll/ABC-123-XYZ/brandCode/21D",
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "968ab5b4afb84c6499a36db50b3365f2",
+                "description": ""
+              }
+            ],
+            "body": {}
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "parsed",
+          "header": [],
+          "cookie": [],
+          "responseTime": "0",
+          "body": "{\n    \"success\": true\n}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "d66944f6-db52-3c7c-af59-3f04f51c085b",
+      "name": "Post Mock Multiple",
+      "request": {
+        "url": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n\t{\"brandCode\": \"21D\"},\n\t{\"brandCode\": \"CW\"}\n]"
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "30052f25-4853-a35a-2776-6b89eb0d0899",
+          "name": "Post Mock Multiple",
+          "originalRequest": {
+            "url": "{{profile-microservice}}/enroll/ABC-123-XYZ",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text",
+                "description": ""
+              },
+              {
+                "key": "x-api-key",
+                "value": "968ab5b4afb84c6499a36db50b3365f2",
+                "type": "text",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t{\"brandCode\": \"21D\"},\n\t{\"brandCode\": \"CW\"}\n]"
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "parsed",
+          "header": [],
+          "cookie": [],
+          "responseTime": "0",
+          "body": "{\n    \"success\": true\n}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "e7f5f8d7-7e4a-1549-023d-de0dd0ef4480",
+      "name": "Post Mock Maximal",
+      "request": {
+        "url": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ/brandCode/21D",
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n\t{\"brandCode\": \"21D\"},\n    {\"brandCode\": \"CW\"}\n]"
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "66865f14-005d-fbbe-e699-b6aae80c69f9",
+          "name": "Mock/Nutrition/Maximal",
+          "originalRequest": {
+            "url": "{{profile-microservice}}/enroll/ABC-123-XYZ",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              },
+              {
+                "key": "x-api-key",
+                "value": "968ab5b4afb84c6499a36db50b3365f2",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[{\n  \"resource\":\"programs\",\n  \"brandCode\": \"21D\"\n}]"
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "text",
+          "header": [
+            {
+              "key": "Connection",
+              "value": "Keep-Alive",
+              "name": "Connection",
+              "description": ""
+            },
+            {
+              "key": "Content-Length",
+              "value": "2139",
+              "name": "Content-Length",
+              "description": ""
+            },
+            {
+              "key": "Content-Type",
+              "value": "text/html; charset=UTF-8",
+              "name": "Content-Type",
+              "description": ""
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 29 Aug 2017 08:45:28 GMT",
+              "name": "Date",
+              "description": ""
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5, max=100",
+              "name": "Keep-Alive",
+              "description": ""
+            },
+            {
+              "key": "Server",
+              "value": "Apache/2.4.7 (Ubuntu)",
+              "name": "Server",
+              "description": ""
+            }
+          ],
+          "cookie": [],
+          "responseTime": "1591",
+          "body": "{\n    \"success\": true\n}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "77837746-feed-08b7-791e-fa2cc6c76c92",
+      "name": "Get Mock",
+      "request": {
+        "url": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ",
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "46f753d3-ac08-a71a-a9cb-b43386f94d75",
+          "name": "Get Mock",
+          "originalRequest": {
+            "url": "{{profile-microservice}}/enroll/ABC-123-XYZ",
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-api-key",
+                "value": "968ab5b4afb84c6499a36db50b3365f2",
+                "description": ""
+              }
+            ],
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "parsed",
+          "header": [],
+          "cookie": [],
+          "responseTime": "0",
+          "body": "{\n  \"profileId\": \"ABC-123-XYZ\",\n  \"items\": [\n    {\n      \"brandCode\": \"21D\",\n      \"dateEnrolled\": \"2017-08-22T18:12:10Z\",\n      \"enrollmentStatus\": \"active\"\n    },\n    {\n      \"brandCode\": \"CW\",\n      \"dateEnrolled\": \"2017-08-22T18:12:10Z\",\n      \"enrollmentStatus\": \"inactive\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "883083b3-4551-c5c3-48f9-df8b24dd52be",
+      "name": "Get Mock using optional parameters",
+      "request": {
+        "url": {
+          "raw": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ?brandCode=21D&enrollmentStatus=active&resourceType=programs",
+          "protocol": "https",
+          "auth": {},
+          "host": [
+            "11630876-46a5-46ea-8f59-a64d3320c5fc",
+            "mock",
+            "pstmn",
+            "io"
+          ],
+          "path": [
+            "enroll",
+            "ABC-123-XYZ"
+          ],
+          "query": [
+            {
+              "key": "brandCode",
+              "value": "21D",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "enrollmentStatus",
+              "value": "active",
+              "equals": true,
+              "description": ""
+            },
+            {
+              "key": "resourceType",
+              "value": "programs",
+              "equals": true,
+              "description": ""
+            }
+          ],
+          "variable": []
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {},
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "e95ce857-cb3e-6016-4337-f4c3d4fdcfd0",
+          "name": "Get Mock using optional parameters",
+          "originalRequest": {
+            "url": {
+              "raw": "{{profile-microservice}}/enroll/ABC-123-XYZ\n?brandCode=21D&enrollmentStatus=active&resourceType=programs",
+              "auth": {},
+              "host": [
+                "{{profile-microservice}}"
+              ],
+              "path": [
+                ""
+              ],
+              "query": [
+                {
+                  "key": "brandCode",
+                  "value": "21D",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "enrollmentStatus",
+                  "value": "active",
+                  "equals": true,
+                  "description": ""
+                },
+                {
+                  "key": "resourceType",
+                  "value": "programs",
+                  "equals": true,
+                  "description": ""
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "header": [],
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": "json",
+          "_postman_previewtype": "parsed",
+          "header": [],
+          "cookie": [],
+          "responseTime": "0",
+          "body": "{\n  \"profileId\": \"ABC-123-XYZ\",\n  \"items\": [\n    {\n      \"brandCode\": \"21D\",\n      \"dateEnrolled\": \"2017-08-22T18:12:10Z\",\n      \"enrollmentStatus\": \"active\"\n    }\n   ]\n}"
+        }
+      ]
+    },
+    {
+      "_postman_id": "824ed475-a6f1-8067-f71c-d978a9a93bdd",
+      "name": "Mock Delete",
+      "request": {
+        "url": "https://11630876-46a5-46ea-8f59-a64d3320c5fc.mock.pstmn.io/enroll/ABC-123-XYZ",
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": ""
+          },
+          {
+            "key": "x-api-key",
+            "value": "968ab5b4afb84c6499a36db50b3365f2",
+            "description": ""
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n\t{\"brandCode\": \"21D\"},\n\t{\"brandCode\": \"CW\"}\n]"
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "id": "eedd8b48-f334-0f15-e699-bcd27590cf5f",
+          "name": "Mock/Delete",
+          "originalRequest": {
+            "url": "{{profile-microservice}}/enroll/ABC-123-XYZ",
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "description": ""
+              },
+              {
+                "key": "x-api-key",
+                "value": "968ab5b4afb84c6499a36db50b3365f2",
+                "description": ""
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t{\"brandCode\": \"21D\"},\n\t{\"brandCode\": \"CW\"}\n]"
+            }
+          },
+          "status": "No Content",
+          "code": 204,
+          "_postman_previewlanguage": "",
+          "_postman_previewtype": "parsed",
+          "header": [],
+          "cookie": [],
+          "responseTime": "0",
+          "body": ""
+        }
+      ]
+    }
+  ]
+}
